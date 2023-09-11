@@ -11,11 +11,7 @@ The main objective of this project is to predict if a person is having hypothyro
 AWS: https://2hxjm2y4me.us-east-1.awsapprunner.com
 
 # Demo
-
-
-
-
-
+https://github.com/manish70945656555/Thyroid_Disease_Detection/assets/111861277/55bb23dc-7b8d-4ff2-8f48-1e5bda727462
 
 # Technical Aspects
 
