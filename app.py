@@ -13,6 +13,8 @@ from src.pipelines.prediction_pipeline import PredictionPipeline
 
 app = Flask(__name__)
 
+app.config["sample_file"] = "Prediction_SampleFile/"
+
 @app.route("/")
 def home():
     return render_template('index.html')
