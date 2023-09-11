@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wafer fault detection</title>
+    <style>
+        /* Your custom CSS styles here */
+        body {
+            background-color: #e6f7ff; /* Blue tint background color */
+            font-family: "Open Sans", Helvetica, sans-serif;
+        }
+
+        .frame {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 400px;
+            height: 400px;
+            margin-top: -200px;
+            margin-left: -200px;
+            border-radius: 2px;
+            box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            background: linear-gradient(to top right, #4b0082 0%, #ff69b4 100%); /* Updated gradient colors */
+            color: #fff; /* Text color */
+            font-family: "Open Sans", Helvetica, sans-serif;
+        }
+
+        .center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            height: 260px;
+            border-radius: 3px;
+            box-shadow: 8px 10px 15px 0 rgba(0, 0, 0, 0.2);
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+        }
+
+        .title {
+            width: 100%;
+            height: 50px;
+            border-bottom: 1px solid #999;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 16px;
+            font-weight: 300;
+            color: #333;
+        }
+
+        .dropzone {
+            width: 100px;
+            height: 80px;
+            border: 1px dashed #999;
+            border-radius: 3px;
+            text-align: center;
+        }
+
+        .upload-icon {
+            margin: 25px 2px 2px 2px;
+        }
+
+        .upload-input {
+            position: relative;
+            top: -62px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+        }
+
+        .btn {
+            display: block;
+            width: 140px;
+            height: 40px;
+            background: #4b0082; /* Updated button color */
+            color: #fff;
+            border-radius: 3px;
+            border: 0;
+            box-shadow: 0 3px 0 0 #ff69b4; /* Updated button shadow */
+            transition: all 0.3s ease-in-out;
+            font-size: 14px;
+        }
+
+        .btn:hover {
+            background: #8a2be2; /* Updated button hover color */
+            box-shadow: 0 3px 0 0 #ff1493; /* Updated button hover shadow */
+        }
+
+        /* Additional Styles for Instructions */
+        .instructions-container {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        h2 {
+            font-size: 20px;
+            color: #4b0082; /* Dark purple color for instructions heading */
+        }
+
+    </style>
+</head>
+<body>
+    <!-- partial:index.partial.html -->
+    <form action="/predict" method="post" enctype="multipart/form-data">
+        <h1 class="title">Upload CSV for the prediction</h1>
+        <div class="frame">
+            <div class="center">
+                <div class="title">
+                    <h1>Drop file to upload</h1>
+                </div>
+
+                <div class="dropzone">
+                    <img src="http://100dayscss.com/codepen/upload.svg" class="upload-icon" />
+                    <input type="file" class="upload-input" name="file" accept=".csv">
+                </div>
+
+                <button type="submit" class="btn" name="uploadbutton">Upload file</button>
+            </div>
+        </div>
+    </form>
+    <!-- original pen: https://codepen.io/roydigerhund/pen/ZQdbeN  -->
+
+    <!-- NO JS ADDED YET -->
+    <!-- partial -->
+    <script src='https://100dayscss.com/codepen/js/jquery.min.js'></script><script src="./script.js"></script>
+</body>
+</html>

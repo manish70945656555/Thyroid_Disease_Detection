@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thyroid Disease Detection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e6f7ff; /* Blue tint background color */
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .header {
+            background-color: #4b0082; /* Dark purple header background color */
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+
+        .button-container {
+            margin-top: 20px;
+        }
+
+        .predict-button {
+            background-color: #3498db; /* Blue button color */
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .predict-button:hover {
+            background-color: #2980b9; /* Button color on hover */
+        }
+
+        /* Additional Styles for Instructions and Sample CSV */
+        .instructions-container {
+            margin-top: 30px;
+        }
+
+        .instructions {
+            font-size: 18px;
+            text-align: left;
+            margin-bottom: 10px;
+        }
+
+        .sample-button {
+            background-color: #4b0082; /* Dark purple button color */
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .sample-button:hover {
+            background-color: #800080; /* Button color on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Thyroid Disease Detection</h1>
+    </div>
+    <div class="container">
+        <p>Welcome to the Thyroid Disease Detection system. This system uses machine learning to predict thyroid disease based on medical data.</p>
+        <div class="button-container">
+            <!-- Use a relative path to the HTML file in the same folder -->
+            <a href="/predict">
+                <button class="predict-button">Predict New Data</button>
+            </a>
+        </div>
+        
+        <!-- Instructions and Sample CSV Download -->
+        <div class="instructions-container">
+            <h3>Download a Sample submission file for reference</h3>
+            <!-- Button for Downloading Sample CSV -->
+            <div class="form-group">
+                <a href="/return_sample_file" download='sample_file.csv'>
+                    <button class="sample-button">Download Sample CSV</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

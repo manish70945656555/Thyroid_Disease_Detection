@@ -1,0 +1,11 @@
+# Exclude the docs folder
+/docs
+
+# Exclude the logs folder
+/logs
+
+# Exclude the notebooks folder
+/notebooks
+
+# Exclude the README.md file
+README.md
