@@ -8,14 +8,10 @@ The main objective of this project is to predict if a person is having hypothyro
 
 ## For Prediction
 
-AWS: http://tddbulkprediction-env.eba-uqgwbduj.us-east-2.elasticbeanstalk.com/
+AWS: https://2hxjm2y4me.us-east-1.awsapprunner.com
 
 # Demo
-
-https://user-images.githubusercontent.com/72372136/134773017-d9d26150-0e68-4c2d-8627-b3a64beeac9b.mp4
-
-
-
+https://github.com/manish70945656555/Thyroid_Disease_Detection/assets/111861277/698d2952-bd56-498e-9994-0447e87d3196
 
 # Technical Aspects
 
@@ -31,8 +27,8 @@ https://user-images.githubusercontent.com/72372136/134773017-d9d26150-0e68-4c2d-
 
 Code is written in Python 3.7 and more. If you don't have python installed on your system, click here https://www.python.org/downloads/ to install.
 
-- Create virtual environment - conda create -n myenv python=3.7
-- Activate the environment - conda activate myenv
+- Create virtual environment - conda create -p venv python=3.8 -y
+- Activate the environment - conda activate venv
 - Install the packages - pip install -r requirements.txt
 - Run the app - python run app.py
 
@@ -67,36 +63,41 @@ The final model is deployed on AWS using Flask framework.
 
 ## User Interface
 ### Batch File Prediction User Interface
-#### Homepage: A very simple UI with single page. 
-![wireframe_tdd_1](https://user-images.githubusercontent.com/72372136/134201402-7c55f34a-b633-44f1-b2a3-87da79a37c47.JPG)
+#### Homepage: We will have a single page UI which will facilitate bulk prediction for Thyroid Disease Detection. 
+![Homepage](https://github.com/manish70945656555/Thyroid_Disease_Detection/assets/111861277/c5ae009f-db17-4714-a2a8-188f41144b5b)
 
-#### User need to upload CSV file and click predict button for prediction to start.
-![wireframe_tdd_2](https://user-images.githubusercontent.com/72372136/134201675-f3a40430-cb60-4817-a21b-de65370f0e69.JPG)
+#### First thing anyone will see is a button on Homepage for predict new data , if anyone click on that browser redirect to other page for taking prediction data.
 
-#### User can download their result by clicking download button below.
-![wireframe_tdd_3](https://user-images.githubusercontent.com/72372136/134201925-476df9d9-7f2f-4d5b-b927-46897f5c492c.JPG)
+![Predict-Button](https://github.com/manish70945656555/Thyroid_Disease_Detection/assets/111861277/462123fe-71c3-44cf-8958-7f6df2d10706)
 
-#### Downloaded CSV file will contain a new column with thyroid disease patient is suffering from.
-![wireframe_tdd_4](https://user-images.githubusercontent.com/72372136/134202106-fb8e0274-ac88-4f9b-b77e-4e834d642a24.JPG)
+#### On Home page we will have an option which enable user to download sample submission CSV file for reference.
 
-#### User can also download sample csv file for reference.
-![wireframe_tdd_5](https://user-images.githubusercontent.com/72372136/134202214-b4d2fa52-fa25-47d9-9a89-034515e94051.JPG)
+![Sample-file-button](https://github.com/manish70945656555/Thyroid_Disease_Detection/assets/111861277/4eca605b-d5ce-4799-b70f-d4456c11150e)
 
-#### Data in Cassandra Database.
-![DataInCassandraDB](https://user-images.githubusercontent.com/72372136/134202316-ef62ddc2-25f9-451e-bd34-be6c3accce4b.JPG)
+#### When Client click on predict new data buutton then client will redirect to new page and the    First thing client will see is a pop-up window on Homepage which will ask for CSV file for prediction.
+
+![Pop-Up](https://github.com/manish70945656555/Thyroid_Disease_Detection/assets/111861277/5bb13a9d-f253-49a6-b450-e2b142ba1ede)
+
+#### After choosing the csv file for prediction, user has to click on upload file button for prediction. And then automatically a new pop up window will come which give option to download the prediction in csv file format.
+
+![File-Choosing](https://github.com/manish70945656555/Thyroid_Disease_Detection/assets/111861277/5bdeefb2-7a8c-414b-aff8-f444f43b28d1)
+
+#### Prediction CSV file will contain a new column target which show person is suffering from hypothyroid or not.
+
+![Predicted-csv](https://github.com/manish70945656555/Thyroid_Disease_Detection/assets/111861277/c08ff395-88a2-4758-8c0b-4c122b243555)
 
 
 ## Project Documents
 
-- HLD: https://github.com/imkushwaha/Thyroid-Disease-Detection/blob/main/Docs/TDD_HLD_V1.0.pdf
+- HLD: https://github.com/manish70945656555/Thyroid_Disease_Detection/blob/main/Docs/TDD_HLD_V1.0.pdf
 
-- LLD: https://github.com/imkushwaha/Thyroid-Disease-Detection/blob/main/Docs/TDD_LLD_V1.0.pdf
+- LLD: https://github.com/manish70945656555/Thyroid_Disease_Detection/blob/main/Docs/TDD_LLD_V1.0.pdf
 
-- Architecture: https://github.com/imkushwaha/Thyroid-Disease-Detection/blob/main/Docs/TDD_Architecture_V1.0.pdf
+- Architecture: https://github.com/manish70945656555/Thyroid_Disease_Detection/blob/main/Docs/TDD_Architecture_V1.0.pdf
 
-- Wireframe: https://github.com/imkushwaha/Thyroid-Disease-Detection/blob/main/Docs/TDD_Wireframe_V1.0.pdf
+- Wireframe: https://github.com/manish70945656555/Thyroid_Disease_Detection/blob/main/Docs/TDD_Wireframe_V1.0.pdf
 
-- Detailed Project Report: https://github.com/imkushwaha/Thyroid-Disease-Detection/blob/main/Docs/TDD_DPR.pdf
+- Detailed Project Report: https://github.com/manish70945656555/Thyroid_Disease_Detection/blob/main/Docs/TDD_DPR.pdf
 
 
 # Author
