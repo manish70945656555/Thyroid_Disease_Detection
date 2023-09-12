@@ -15,7 +15,7 @@ https://github.com/manish70945656555/Thyroid_Disease_Detection/assets/111861277/
 
 # Technical Aspects
 
-- Python 3.7 and more
+- Python 3.8 and more
 - Important Libraries: sklearn, pandas, numpy, matplotlib & seaborn
 - Front-end: HTML, CSS 
 - Back-end: Flask framework
@@ -25,7 +25,7 @@ https://github.com/manish70945656555/Thyroid_Disease_Detection/assets/111861277/
 
 # How to run this app 
 
-Code is written in Python 3.7 and more. If you don't have python installed on your system, click here https://www.python.org/downloads/ to install.
+Code is written in Python 3.8 and more. If you don't have python installed on your system, click here https://www.python.org/downloads/ to install.
 
 - Create virtual environment - conda create -p venv python=3.8 -y
 - Activate the environment - conda activate venv
